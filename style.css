@@ -16,6 +16,7 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -191,8 +192,4 @@ input {
     margin-bottom: 50px;
 }
 
-.footer__social--list {
-    font-size: 24px;
-    
-}
 
