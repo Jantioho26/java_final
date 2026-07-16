@@ -86,7 +86,8 @@ header {
 
 .container {
  margin-top: 75px;
- margin-left: 150px;
+ 
+
 
 }
 
@@ -178,7 +179,8 @@ input {
     display: flex;
     flex-direction: column;
     align-content: center;
-
+    width: cover;
+    margin: 0 auto;
 }
 
 .footer__logo {
@@ -188,8 +190,17 @@ input {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 600px;
+    margin-left: 750px;
     margin-bottom: 50px;
+}
+
+.footer__social--list {
+    font-size: 24px;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+   
 }
 
 
