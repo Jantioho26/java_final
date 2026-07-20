@@ -170,7 +170,7 @@ footer {
 .footer__logo {
   display: flex;
   border-radius: 50%;
-  height: 75px;
+  height: 100px;
   margin-left: 700px;
 }
 
@@ -225,11 +225,15 @@ footer {
   display: flex;
 }
 
-.lens__ratings {
-  color: #fabf2a;;
-}
-
 .lens__title:hover {
   text-decoration: underline;
   cursor: not-allowed;
 }
+
+.lens__ratings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
