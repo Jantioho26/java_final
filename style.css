@@ -16,6 +16,7 @@ body {
   background-color: white;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -230,11 +231,10 @@ footer {
   cursor: not-allowed;
 }
 
-.lens__ratings {
-  display: flex;
+.lens__ratings i {
   align-items: center;
   gap: 8px;
   font-size: 18px;
-  color: goldenrod;
+  color:darkorange
 }
 
