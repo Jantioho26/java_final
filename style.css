@@ -185,6 +185,12 @@ footer {
   margin-left: 500px;
 }
 
+.footer__social--link:hover {
+  text-decoration: underline;
+  transition: all 300ms ease;
+  color: darkorange;
+}
+
 .overlay[data-v-390ceb07] {
   background-image: url("./Assests/which-lens-should-i-choose-for-my-dslr-camera.jpg");
   background-repeat: no-repeat;
@@ -224,6 +230,8 @@ footer {
 .lens__title {
   position: relative;
   display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .lens__title:hover {
@@ -235,6 +243,7 @@ footer {
   align-items: center;
   gap: 8px;
   font-size: 18px;
-  color:darkorange
+  color:darkorange;
+  margin-top: 8px;
 }
 
