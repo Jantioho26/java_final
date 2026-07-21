@@ -93,7 +93,7 @@ header {
   justify-content: space-between;
 }
 .header__description {
-  max-width: 100vw;
+  max-width: 100%vw;
   font-size: 55px;
   justify-content: center;
   align-content: center;
@@ -186,7 +186,6 @@ footer {
 }
 
 .footer__social--link:hover {
-  text-decoration: underline;
   transition: all 300ms ease;
   color: darkorange;
 }
@@ -237,6 +236,7 @@ footer {
 .lens__title:hover {
   text-decoration: underline;
   cursor: not-allowed;
+  color: darkorange;
 }
 
 .lens__ratings i {
@@ -247,3 +247,7 @@ footer {
   margin-top: 8px;
 }
 
+/* small phones, tablets and smart phones */ 
+@media (max-width: 768px) {
+
+}
