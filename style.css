@@ -8,6 +8,10 @@
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -189,6 +193,7 @@ footer {
   transition: all 300ms ease;
   color: darkorange;
 }
+
 
 .overlay[data-v-390ceb07] {
   background-image: url("./Assests/which-lens-should-i-choose-for-my-dslr-camera.jpg");
