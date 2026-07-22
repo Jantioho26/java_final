@@ -37,11 +37,9 @@
          <div data-v-390ceb07="" class="overlay"></div>
          </div>
         </nav>
-        
   <header>
     <div class="container">
         <div class="row">
-            <div id="lens-list"></div>
             <div class="header__description">
                 <p class="header__description__para">
                     Rent any lens for any occasion! 
@@ -53,21 +51,25 @@
         <img src="./Assests/camera-regular-full.svg" alt="search-btn">
     </button>
 </form>
- <select class="filter">
-    <option value="" disabled selected>Sort</option>
-    <option value="LOW_TO_HIGH">Price, Low to High</option>
-    <option value="HIGH_TO_LOW">Price, High to Low</option>
-    <option value="Rating">Rating</option>
-</select>
  </div>
    </div>
  </div>
     </header>
-  <main >
+  <main>
     <div class="Lenses">
         <div class="container">
-            <div class="row"></div>
-                </div>
+            <div class="row">
+                <div class="lens__header">
+                    <h2 class="section__title lens__header--title">
+              All <span class="orange">Lenses</span>
+            </h2>
+            <select  id="sort__filter">
+                <option value="" disabled selected>Sort</option>
+                <option value="LOW_TO_HIGH">Price, Low to High</option>
+                <option value="HIGH_TO_LOW">Price, High to Low</option>
+                <option value="Rating">Rating</option>
+            </select>
+             </div>
                 <div class="lens">
                     <figure class="lens__img--wrapper">
                         <img class="lens__img" src="./Assests/sony24-70.webp" alt="lens__img">
@@ -242,7 +244,9 @@
                          </figure>
                           </div>
                         </div>
+                        </div>
                     </figure>
+                </div>
                 </div>
             </div>
         </div>
