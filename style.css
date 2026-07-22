@@ -116,6 +116,13 @@ nav {
   
 }
 
+.search-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 input {
   display: flex;
   align-content: center;
@@ -123,9 +130,10 @@ input {
   width: 300%;
 }
 
+
 .search-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: 5px solid black;
   border-radius: 20px;
@@ -133,17 +141,6 @@ input {
   background-color: rgb(245, 245, 245);
   margin-top: 60px;
   width: 600px;
-}
-
-
-.search-container input {
-  border: none;
-  margin-right: 10px;
-  flex: 1;
-  outline: none;
-  flex-grow: 1;
-  padding: 5px;
-  background-color: rgb(245, 245, 245);
 }
 
 .search-btn {
@@ -155,9 +152,14 @@ input {
   cursor: pointer;
 }
 
-.filter {
-  display: flex;
-  
+.search-container input {
+  border: none;
+  margin-right: 10px;
+  flex: 1;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  background-color: rgb(245, 245, 245);
 }
 
 .sony__img {
