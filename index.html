@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lens Rentals</title>
+    <title>Lakeshore Lens Co.</title>
      <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -11,6 +11,7 @@
 </head>
 <body>
       <nav>
+        <div class="nav__row">
     <figure>
            <img id="logo" src="./Assests/Lens rentals (1).png" alt="lens__logo" class="nav__logo">
            <div class="nav__logo--title">Lakeshore Lens Co.</div>
@@ -34,7 +35,9 @@
             </li>
         </ul>
          <div data-v-390ceb07="" class="overlay"></div>
+         </div>
         </nav>
+        
   <header>
     <div class="container">
         <div class="row">
@@ -43,25 +46,26 @@
                 <p class="header__description__para">
                     Rent any lens for any occasion! 
                 </p>
-                </div>
-         </div>
            <form action="/search-results" method="GET" class="search-container">
     <input type="text" name="query" placeholder="Search by Price or Brand" aria-label="Search">
     <button type="submit" class="search-btn" aria-label="Submit Search">
         <img src="./Assests/camera-regular-full.svg" alt="search-btn">
     </button>
 </form>
+ <select class="filter">
+    <option value="" disabled selected>Sort</option>
+    <option value="LOW_TO_HIGH">Price, Low to High</option>
+    <option value="HIGH_TO_LOW">Price, High to Low</option>
+    <option value="Rating">Rating</option>
+</select>
+ </div>
+   </div>
     </header>
   <main >
     <div class="Lenses">
         <div class="container">
-            <div class="row">
-                <select id="filter">
-                    <option value="" disabled selected>Sort</option>
-                    <option value="LOW_TO_HIGH">Price, Low to High</option>
-                    <option value="HIGH_TO_LOW">Price, High to Low</option>
-                    <option value="Rating">Rating</option>
-                </select>
+            <div class="row"></div>
+                </div>
                 <div class="lens">
                     <figure class="lens__img--wrapper">
                         <img class="lens__img" src="./Assests/sony24-70.webp" alt="lens__img">
@@ -246,9 +250,9 @@
        <div class="container">
         <div class="row footer__row">
             <figure>
-             <img id="logo" src="./Assests/Lens rentals (1).png" alt="lens__logo" class="footer__logo">
-            </figure>
-           <div class="footer__social--list">
+             <img class="footer__logo" src="./Assests/Lens rentals (1).png" alt="lens__logo">
+              </figure>    
+             <div class="footer__social--list">
             <a href="#" class="
             footer__social--link
             link__hover-effect
