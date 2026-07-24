@@ -1,18 +1,18 @@
 function renderLenses(filter) {
-  const lensesWrapper = document.querySelector(".lenses");
+  const lensesWrapper = document.querySelector(".lenses-list");
 
   const lenses = getLenses();
 
  
   if (filter === 'LOW_TO_HIGH') {
     console.log(filter)
-   lenses.sort((a, b) => a.originalPrice - b.originalPrice);
+   lenses.sort((a, b) => a.Price - b.Price);
   }
   else if (filter === 'HIGH_TO_LOW') {
-    lenses.sort((a, b) => b.originalPrice - a.originalPrice);
+    lenses.sort((a, b) => b.Price - a.Price);
   }
   else if (filter === 'RATING') {
-    lenses.sort((a, b) => b.rating - a.rating);
+    lenses.sort((a, b) => b.Rating - a.Rating);
   }
 
 
@@ -36,7 +36,7 @@ function renderLenses(filter) {
 
   
   console.log(lenses)
-    lensWrapper.innerHTML = lensItems;
+   lensesWrapper.innerHTML = lensesItems;
   }
 
   function filterLenses(event) {
@@ -136,6 +136,3 @@ return [
     "Brand": "Nikon"
   }
 ]}
-
-
-
