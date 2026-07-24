@@ -21,7 +21,7 @@ function renderLenses(filter) {
       <figure class="lens__img--wrapper">
         <img class="lens__img" src="./${lenses.URL}" alt="lens__img">
         <div class="lens__title">${lenses.Title}</div>
-        <div class="lens__price">$${lenses.Price.toFixed(2)} Per Day</div>
+        <div class="lens__price">$${lenses.Price} Per Day</div>
         <div class="lens__ratings">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -45,9 +45,9 @@ function renderLenses(filter) {
   
 
 
-setTimeout(() => {
+
   renderLenses();
-});
+
 
 function getLenses() {
 return [
@@ -55,84 +55,84 @@ return [
     "Title": "Sony 24-70",
     "Price": 50,
     "Rating": 5,
-    "URL": "assests/sony24-70.webp",
+    "URL": "Assests/sony24-70.webp",
     "Brand": "Sony"
   },
   {
     "Title": "Sony 85",
     "Price": 75,
     "Rating": 5,
-    "URL": "assests/sony85.webp",
+    "URL": "Assests/Sony85.webp",
     "Brand": "Sony"
   },
   {
     "Title": "Sony 50-150",
     "Price": 45,
     "Rating": 5,
-    "URL": "assests/sony50-150.webp",
+    "URL": "Assests/sony50-150.webp",
     "Brand": "Sony"
   },
   {
     "Title": "Sony 16-24",
     "Price": 100,
     "Rating": 4,
-    "URL": "assests/sony16-24.webp",
+    "URL": "Assests/shopping.webp",
     "Brand": "Sony"
   },
   {
     "Title": "Cannon 15-36",
     "Price": 35,
     "Rating": 5,
-    "URL": "assests/cannon15-36.webp",
+    "URL": "Assests/cannon15-36.webp",
     "Brand": "Cannon"
   },
   {
     "Title": "Cannon 24-105",
     "Price": 55,
     "Rating": 5,
-    "URL": "assests/cannon24-105.webp",
+    "URL": "Assests/cannon24-105.webp",
     "Brand": "Cannon"
   },
   {
     "Title": "Cannon 100",
     "Price": 100,
     "Rating": 4,
-    "URL": "assests/cannon100.webp",
+    "URL": "Assests/Cannon100.jpeg",
     "Brand": "Cannon"
   },
   {
     "Title": "Cannon100-300",
     "Price": 125,
     "Rating": 5,
-    "URL": "assests/cannon100-300.webp",
+    "URL": "Assests/Cannon 100-300.webp",
     "Brand": "Cannon"
   },
   {
     "Title": "Nikon 35",
     "Price": 50,
     "Rating": 5,
-    "URL": "assests/nikon35.webp",
+    "URL": "Assests/nikon35mm.jpeg",
     "Brand": "Nikon"
   },
   {
     "Title": "Nikon 70-200",
     "Price": 75,
     "Rating": 5,
-    "URL": "assests/nikon70-200.webp",
+    "URL": "Assests/nikon70-200.webp",
     "Brand": "Nikon"
   },
   {
     "Title": "Nikon 28-135",
     "Price": 125,
     "Rating": 5,
-    "URL": "assests/nikon28-135.webp",
+    "URL": "Assests/Nikon 28-135 .webp",
     "Brand": "Nikon"
   },
   {
     "Title": "Nikon 85",
     "Price": 85,
     "Rating": 5,
-    "URL": "assests/nikon85.webp",
+    "URL": "Assests/Nikon 85mm.jpeg",
     "Brand": "Nikon"
   }
 ]}
