@@ -240,7 +240,7 @@ footer {
   display: flex;
   padding: 6% 0;
   position: relative;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .footer__row {
@@ -325,6 +325,7 @@ footer {
   margin-top: 8px;
 }
 
+
 /* small phones, tablets and smart phones */ 
 @media (max-width: 768px) {
   .nav__row {
@@ -342,14 +343,6 @@ footer {
 
  .nav__link--list {
   display: none;
- }
-
- .nav__logo,
- .nav__logo--title {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-
  }
 
  .container {
