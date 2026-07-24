@@ -230,6 +230,14 @@ select {
   font-size: 55px;
 }
 
+.lenses-results {
+  gap: 40px;
+  padding: 60px 40px 0;
+}
+
+.lens-item {
+  width: 220px;
+}
 .sony__img {
   margin-top: 34px;
   margin-left: 290px;
