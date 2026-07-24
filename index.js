@@ -1,5 +1,5 @@
 function renderLenses(filter) {
-  const lensesWrapper = document.querySelector(".lenses-list");
+  const lensesWrapper = document.querySelector(".lens");
 
   const lenses = getLenses();
 
