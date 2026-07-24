@@ -11,6 +11,9 @@ function renderLenses(filter) {
   else if (filter === 'HIGH_TO_LOW') {
     lenses.sort((a, b) => b.originalPrice - a.originalPrice);
   }
+  else if (filter === 'RATING') {
+    lenses.sort((a, b) => b.rating - a.rating);
+  }
 
 
   const lensesItems = lenses.map((lenses) => {
