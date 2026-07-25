@@ -236,8 +236,12 @@ select {
 }
 
 .lens-item {
-  width: 220px;
+  width: 320px;
+  margin-left: 100px;
+  margin-bottom: 80px;
 }
+
+
 .sony__img {
   margin-top: 34px;
   margin-left: 290px;
@@ -334,6 +338,11 @@ footer {
   margin-top: 8px;
 }
 
+@media (max-width: 880px) {
+  .lens-item {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+}
 
 /* small phones, tablets and smart phones */ 
 @media (max-width: 768px) {
@@ -403,7 +412,15 @@ footer {
   .footer { 
     width: 100%;
   }
+
+  .lenses-results {
+  gap: 40px;
 }
+
+.lens-item {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
 
 
 
