@@ -421,6 +421,54 @@ footer {
   grid-template-columns: repeat(2, 1fr) !important;
 }
 
+@media (max-width: 640px) {
+   .nav__row {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+ }  
+ .nav__logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+ }
 
+ .nav__link--list {
+  display: none;
+ }
 
+ .container {
+  padding: 0 20px;
+}
+ .header__description--para {
+   text-align: center;
+  width: auto;
+  padding: 8px 12px;
+  font-size: 14px;
+ }
 
+ .search-filter {
+    width: 100%;
+    max-width: 880px;
+    font-size: 14px;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 880px;
+    font-size: 14px;
+  }
+
+  .footer { 
+    width: 100%;
+  }
+
+  .lenses-results {
+  gap: 40px;
+}
+
+.lens-item {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+}
