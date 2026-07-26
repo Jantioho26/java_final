@@ -148,7 +148,7 @@ button {
 }
 
 
-.header__description__para {
+.header__description--para {
   display: flex;
   align-items: center;
   font-size: 55px;
@@ -169,7 +169,7 @@ input {
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 300%;
+  width: 100%;
 }
 
 
@@ -191,7 +191,7 @@ input {
   border: none;
   background-color: rgb(245, 245, 245);
   display: flex;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .search-container input {
@@ -371,7 +371,7 @@ footer {
    text-align: center;
   width: auto;
   padding: 8px 12px;
-  font-size: 14px;
+  font-size: 34px;
  }
   
  .lenses {
@@ -441,29 +441,33 @@ footer {
  .container {
   padding: 0 20px;
 }
+
  .header__description--para {
    text-align: center;
   width: auto;
-  padding: 8px 12px;
-  font-size: 14px;
+  padding: 8x 12px;
+  font-size: 24px;
  }
 
  .search-filter {
     width: 100%;
     max-width: 880px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .search-container {
     width: 100%;
     max-width: 880px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .footer { 
     width: 100%;
   }
 
+  .footer__social--list{
+    font-size: 14px;
+  }
   .lenses-results {
   gap: 40px;
 }

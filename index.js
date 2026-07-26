@@ -1,11 +1,17 @@
-function renderLenses(filter) {
+function renderLenses(filter, searchValue = "") {
   const lensesWrapper = document.querySelector(".lens");
-
-  const lenses = getLenses();
+  let lenses = getLenses();
+  
+  if (searchValue) {
+    lenses = lenses.filter((lens) =>
+      lens.Title.toLowerCase().includes(searchValue.toLowerCase()) ||
+      lens.Brand.toLowerCase().includes(searchValue.toLowerCase()) ||
+      lens.Price.toString().includes(searchValue)
+  );
+  }
 
  
   if (filter === 'LOW_TO_HIGH') {
-    console.log(filter)
    lenses.sort((a, b) => a.Price - b.Price);
   }
   else if (filter === 'HIGH_TO_LOW') {
@@ -43,12 +49,6 @@ function renderLenses(filter) {
       renderLenses(event.target.value);
     }
   
-
-
-
-  renderLenses();
-
-
 function getLenses() {
 return [
   {
@@ -136,3 +136,11 @@ return [
     "Brand": "Nikon"
   }
 ]}
+
+ const searchInput = document.querySelector("#searchInput");
+
+  searchInput.addEventListener("input", function (event) {
+  renderLenses("", event.target.value);
+  });
+
+  renderLenses();

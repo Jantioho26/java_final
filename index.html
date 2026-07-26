@@ -42,12 +42,12 @@
     <div class="container">
         <div class="row">
             <div class="header__description">
-                <p class="header__description__para">
+                <p class="header__description--para">
                     Rent any lens for any occasion! 
                 </p>
                 <div class="search-filter">
-           <form action="/search-results" method="GET" class="search-container">
-    <input type="text" name="query" placeholder="Search by Price or Brand" aria-label="Search">
+           <form class="search-container">
+    <input id="searchInput" placeholder="Search by Price or Brand" type="text" name="query" aria-label="Search">
     <button type="submit" class="search-btn" aria-label="Submit Search">
         <img src="./Assests/camera-regular-full.svg" alt="search-btn">
     </button>
@@ -64,7 +64,6 @@
                 <div class="lens__header">
                     <h2 class="section__title lens__header--title">
               All Lenses
-            </span>
             </h2>
             <select  id="sort__filter" onchange="filterLenses(event)">
                 <option value="" disabled selected>Sort</option>
@@ -73,14 +72,11 @@
                 <option value="RATING">Rating</option>
             </select>
              </div>
-                <div class="lens"></div>
                 <div class="lens lenses-results"></div>
-                    
                 </div>
                 </div>
             </div>
         </div>
-    </section>
   </main>
     <footer>
        <div class="container">
