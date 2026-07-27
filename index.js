@@ -51,7 +51,7 @@
   
 function getLenses() {
   return [
-  {
+{
     "Title": "Sony 24-70",
     "Price": 50,
     "Rating": 5,
@@ -62,7 +62,7 @@ function getLenses() {
     "Title": "Sony 85",
     "Price": 75,
     "Rating": 5,
-    "URL": "Assests/Sony85.webp",
+    "URL": "Assests/sony85.webp",
     "Brand": "Sony"
   },
   {
@@ -136,7 +136,6 @@ function getLenses() {
     "Brand": "Nikon"
     },
    ]}
-
 
  const searchInput = document.querySelector("#searchInput");
 
