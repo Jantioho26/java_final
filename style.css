@@ -214,6 +214,17 @@ select {
     display: flex;
 }
 
+.lenses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.lens-card {
+  width: 100%;
+}
+
 .lens__header {
   display: flex; 
   align-content: center;
