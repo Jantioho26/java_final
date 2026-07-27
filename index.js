@@ -1,7 +1,7 @@
-function renderLenses(filter, searchValue = "") {
+ function renderLenses(filter, searchValue = "") {
   const lensesWrapper = document.querySelector(".lens");
   let lenses = getLenses();
-  
+
   if (searchValue) {
     lenses = lenses.filter((lens) =>
       lens.Title.toLowerCase().includes(searchValue.toLowerCase()) ||
@@ -50,7 +50,7 @@ function renderLenses(filter, searchValue = "") {
     }
   
 function getLenses() {
-return [
+  return [
   {
     "Title": "Sony 24-70",
     "Price": 50,
@@ -134,8 +134,9 @@ return [
     "Rating": 5,
     "URL": "Assests/Nikon 85mm.jpeg",
     "Brand": "Nikon"
-  }
-]}
+    },
+   ]}
+
 
  const searchInput = document.querySelector("#searchInput");
 

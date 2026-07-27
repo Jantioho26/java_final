@@ -334,6 +334,35 @@ footer {
   margin-top: 8px;
 }
 
+.lens__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: black;
+}
+
+.lens__loading--spinner {
+  display: none !important;
+}
+.lens__loading .lens__loading--spinner {
+  display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 980px) {
   .lens-item {
   grid-template-columns: repeat(2, 1fr) !important;
