@@ -1,6 +1,6 @@
- function renderLenses(filter, searchValue = "") {
+async function renderLenses(filter, searchValue = "") {
   const lensesWrapper = document.querySelector(".lens");
-  let lenses = getLenses();
+  let lenses = await getLenses();
 
   if (searchValue) {
     lenses = lenses.filter((lens) =>
@@ -54,11 +54,6 @@
   "https://6a5e953098d9f02aed79ac73.mockapi.io/JF/Lenses"
 
 
-  async function renderLenses(filter, searchValue = "") {
-  const lensesWrapper = document.querySelector(".lens");
-  let lenses = await getLenses();
-
-
  const searchInput = document.querySelector("#searchInput");
 
   searchInput.addEventListener("input", function (event) {
@@ -76,4 +71,4 @@
   return await response.json();
 }
   renderLenses();
-  }
+  
